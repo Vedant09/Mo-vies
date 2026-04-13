@@ -3,6 +3,7 @@ import "./css/App.css";
 import NavBar from "./components/NavBar";
 import Favorites from "./pages/Favorites";
 import Home from "./pages/Home";
+import ChatBot from "./pages/ChatBot";
 import { MovieProvider } from "./contexts/MovieContext";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/favorites" element={<Favorites />} />
+          <Route path="/chatbot" element={<ChatBot />} />
         </Routes>
       </main>
     </MovieProvider>
